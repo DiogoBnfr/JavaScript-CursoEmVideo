@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores em JavaScript</title>
+    <style>
+        body {
+            font-family: 'JetBrains Mono NL';
+            background-color: rgb(250, 212, 42);
+        }
+    </style>
+</head>
+<body>
+    <h1>Operadores em JavaScript #2</h1>
+    <h2>Operadores Relacionais</h2>
+    <p>
+        <b>Maior que:</b> >
+        <br><b>Menor que:</b> <
+        <br><b>Maior ou igual:</b> >=
+        <br><b>Menor ou igual:</b> <=
+        <br><b>Igual:</b> ==
+        <br><b>Diferente:</b> !=
+    </p>
+    <h3>Exemplos:</h3>
+    <script>
+        var x = window.prompt('Defina a variável X para os exemplos:')
+        var y = window.prompt('Defina a variável Y para os exemplos:')
+        document.write(`<strong>Maior que:</strong> ${x} > ${y} = ${x > y}`)
+        document.write(`<br><strong>Menor que:</strong> ${x} < ${y} = ${x < y}`)
+        document.write(`<br><strong>Maior ou Igual:</strong> ${x} >= ${y} = ${x >= y}`)
+        document.write(`<br><strong>Menor ou Igual:</strong> ${x} <= ${y} = ${x <= y}`)
+        document.write(`<br><strong>Igual:</strong> ${x} == ${y} = ${x == y}`)
+        document.write(`<br><strong>Diferente:</strong> ${x} != ${y} = ${x != y}`)
+        document.write(`<br><strong>Idêntico:</strong> ${x} === ${y} = ${x === y}`)
+    </script>
+    <p>
+        <b>Obs:</b>para dois valores serem considerados
+        <br>idênticos, eles precisam não só possuir o
+        <br>mesmo valor, assim como o mesmo tipo.
+    </p>
+    <h2>Operadores Lógicos</h2>
+    <p>
+        <b>Negação:</b> !
+        <br><b>Conjunção:</b> &&
+        <br><b>Disjunção:</b> ||
+    </p>
+    <h3>Exemplos:</h3>
+    <script>
+        document.write(`<strong>Negação:</strong> ! ${x} != ${y} = ${! x != y}`)
+        document.write(`<br><strong>Conjunção:</strong> ${x} >= ${y} && ${x} != ${y} = ${x >= y && x != y}`)
+        document.write(`<br><strong>Desjunção:</strong> ${x} > ${y} || ${x} === ${y} = ${x > y || x === y}`)
+    </script>
+    <h2>Operador Ternário</h2>
+    <p>
+        <b>Ternário:</b> ?:
+    </p>
+    <h3>Exemplos:</h3>
+    <script>
+        document.write(`<b>Ternário:</b> ${x} > ${y}?'X é maior que Y':'X é menor que Y' = ${x > y?'X é maior que Y':'X é menor que Y'}`)
+    </script>
+    <h2>Ordem de Precedência Geral</h2>
+    <p>
+        A ordem de precesência geral dos operadores
+        <br>em JavaScript é talvez um dos pontos mais
+        <br>importantes no que tange a lógica da linguagem.
+        <br>Ela é responsável por ordenar a sequência de
+        <br>resolução das diversas operações que podem ser
+        <br>feitas com os dados.
+    </p>
+    <h3>Tabela da Ordem de Precedência Geral</h3>
+    <p>
+        |<b> Operadores Aritméticos</b>
+        <br>| ()
+        <br>| **
+        <br>| %
+        <br>| * e /
+        <br>| + e -
+        <br>|
+        <br>|<b> Operadores Relacionais</b>
+        <br>| > e < e >= e <= e == e != e ===
+        <br>|
+        <br>|<b> Operadores Lógicos</b>
+        <br>| !
+        <br>| &&
+        <br>| ||
+        <br>|
+        <br>|<b> Operador Ternário</b>
+        <br>| ?:
+    </p>
+</body>
+</html>

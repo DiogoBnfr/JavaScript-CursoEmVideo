@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armazenando Dados</title>
+    <style>
+        body {
+            font-family: 'JetBrains Mono NL';
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é seu nome?')
+        alert('É um grande prazer te conhecer, ' + nome + '.')
+
+        var n1 = Number.parseInt(window.prompt('Digite um número:'))
+        var n2 = Number.parseInt(window.prompt('Digite outro número:'))
+        // Number.parseInt(v)
+        // Number.parseFloat(v)
+        // Number(v) JS analisa e decide que conversão fazer
+        // Parse = Converter
+
+        var resultado = n1 + n2
+        alert(`A soma entre ${n1} e ${n2} é igual a: ${resultado}`)
+        // number + number para adição
+        // string + string para concatenação
+        // v.length
+        // v.toUpperCase()
+        // v.toLowerCase()
+        // v.toString()
+        // String(v)
+
+        document.write(`A soma entre ${n1} e ${n2} em reais é ${resultado.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+        document.write(`<br>A soma entre ${n1} e ${n2} em dólares é ${resultado.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})}`)
+        document.write(`<br>A soma entre ${n1} e ${n2} em euros é ${resultado.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})}`)
+        // toFixed(n) quantidade de números depois da vírgula
+        // .replace('.', ',') troca um caractere por outro
+        // n.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+    </script>
+</body>
+</html>

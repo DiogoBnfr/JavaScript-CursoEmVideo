@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Dados na Tela</title>
+    <style>
+        body {
+            font-family: 'JetBrains Mono NL';
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual seu nome?')
+        document.write(`Olá <strong>${nome}!</strong> Seu nome tem ${nome.length} letras.`)
+        document.write(`<br>Seu nome em maiúsculas: ${nome.toUpperCase()}`)
+        document.write(`<br>Seu nome em minúsculas: ${nome.toLowerCase()}`)
+    </script>
+</body>
+</html>

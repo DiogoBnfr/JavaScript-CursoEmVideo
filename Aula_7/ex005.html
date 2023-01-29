@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores em JavaScript</title>
+    <style>
+        body {
+            font-family: 'JetBrains Mono NL';
+            background-color: rgb(250, 212, 42);
+        }
+    </style>
+</head>
+<body>
+    <h1>Operadores em JavaScript #1</h1>
+    <p>
+        Os operadores em JavaScript são símbolos que cum
+        <br>prem funções matemáticas, comparativas e lógicas
+        <br>para auxiliar a máquina a desenvolver conclusões
+        <br>automatizadas baseadas nos parâmetros que lhe são
+        <br>concedidos.
+    </p>
+    <h2>Operadores Aritméticos</h2>
+    <p>
+        <b>Adição:</b> +
+        <br><b>Subtração:</b> -
+        <br><b>Multiplicação:</b> *
+        <br><b>Divisão:</b> /
+        <br><b>Divisão Inteira</b> %
+        <br><b>Potenciação:</b> **
+    </p>
+    <h3>Exemplos:</h3>
+    <script>
+        var x = Number(window.prompt('Defina a variável X para os exemplos:'))
+        var y = Number(window.prompt('Defina a variável Y para os exemplos:'))
+        document.write(`<strong>Adição:</strong> ${x} + ${y} = ${x + y}`)
+        document.write(`<br><strong>Subtração:</strong> ${x} - ${y} = ${x - y}`)
+        document.write(`<br><strong>Multiplicação:</strong> ${x} * ${y} = ${x * y}`)
+        document.write(`<br><strong>Divisão:</strong> ${x} / ${y} = ${(x / y).toFixed(2)}`)
+        document.write(`<br><strong>Divisão Inteira:</strong> ${x} % ${y} = ${x % y}`)
+        document.write(`<br><strong>Potenciação:</strong> ${x} ** ${y} = ${x ** y}`)
+    </script>
+    <h2>Operadores de Auto-Atribuição</h2>
+    <p>
+        <b>Adição:</b> +=
+        <br><b>Subtração:</b> -=
+        <br><b>Multiplicação:</b> *=
+        <br><b>Divisão:</b> /=
+        <br><b>Divisão Inteira</b> %=
+        <br><b>Potenciação:</b> **=
+    </p>
+    <h3>Exemplos:</h3>
+    <script>
+        document.write(`<strong>Adição:</strong> var x = ${x} | x += ${y} | x é igual a ${x + y}`)
+        document.write(`<br><strong>Subtração:</strong> var x = ${x} | x -= ${y} | x é igual a ${x - y}`)
+        document.write(`<br><strong>Multiplicação:</strong> var x = ${x} | x *= ${y} | x é igual a ${x * y}`)
+        document.write(`<br><strong>Divisão:</strong> var x = ${x} | x /= ${y} | x é igual a ${(x / y).toFixed(2)}`)
+        document.write(`<br><strong>Divisão Inteira:</strong> var x = ${x} | x %= ${y} | x é igual a ${x % y}`)
+        document.write(`<br><strong>Potenciação:</strong> var x = ${x} | x **= ${y} | x é igual a ${x ** y}`)
+    </script>
+    <h2>Operadores de Incremento</h2>
+    <script>
+        document.write(`<strong>Adição:</strong> var x = ${x} | x++ | x é igual a ${x + 1}`)
+        document.write(`<br><strong>Subtração:</strong> var x = ${x} | x-- | x é igual a ${x - 1}`)
+    </script>
+    <p>
+        <b>Obs:</b> Existe uma pequena diferença nos operado
+        <br>res de Incremento quando os sinais "++" ou "--"
+        <br>vêm antes ou depois das variáveis. Quando os sím
+        <br>bolos vêm antes, a variável recebe o próprio valor
+        <br>+ 1 imediatamente. Quando estão atrás, a variável
+        <br>só ira receber o resultado na próxima vez em que
+        <br>for chamada.
+    </p>
+</body>
+</html>
