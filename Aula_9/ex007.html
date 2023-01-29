@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM</title>
+    <style>
+        body {
+            font-family: 'JetBrains Mono NL';
+            background-color: rgb(250, 212, 42);
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiros Passos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique Aqui!</div>
+    <script>
+        var corpo = window.document.body
+        // definindo acesso ao body do html
+
+        corpo.style.backgroundColor = 'white'
+        // acessando o estilo do body e modificando o brackground para preto
+
+        var p1 = window.document.getElementsByTagName('p')[1]
+        // busca de elemento/objeto por tag
+
+        window.document.write(`Está escrito assim: ${p1.innerText}`) 
+        // innerText = texto contido no objeto
+        window.document.write(`<br>Está escrito assim: ${p1.innerHTML}`) 
+        // innerHTML = texto e formatação contidos no objeto
+
+        p1.style.color = 'gray'
+        // modificando o estilo do paragrafo em JS
+
+        d = window.document.getElementById('msg')
+        d.style.background = 'rgb(250, 212, 42)'
+        d.innerText = 'Linha amarela'
+        // acessando por variável
+
+        window.document.getElementById('msg').style.background = 'rgb(250, 212, 42)'
+        window.document.getElementById('msg').innerText = 'Mudei para amarelo'
+        // acessando sem variável
+
+        window.document.querySelector('div#msg').style.background = 'rgb(250, 212, 42)'
+        // acessando por querySelector
+        // por ID = ('div#msg')
+        // por Classe = ('div.msg')
+    </script>
+</body>
+</html>

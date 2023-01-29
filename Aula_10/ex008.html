@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body {
+            font-family: 'JetBrains Mono NL';
+            background-color: rgb(255, 255, 255);
+        }
+        div#button {
+            font-size: larger;
+            background-color: rgb(250, 212, 42);
+            color: rgb(0, 0, 0);
+            width: 200px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id='button' onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Clique aqui!
+    </div>
+    <script>
+        function clicar() {
+            var botão = window.document.getElementById('button')
+            botão.innerText = 'Clicou!'
+            botão.style.background = 'rgb(10, 180, 40)'
+        }
+        function entrar() {
+            var botão = window.document.getElementById('button')
+            botão.innerText = 'Entrou!'
+            botão.style.background = 'rgb(250, 212, 42)'
+        }
+        function sair() {
+            var botão = window.document.getElementById('button')
+            botão.innerText = 'Saiu!'
+            botão.style.background = 'rgb(150, 0, 0)'
+        }
+    </script>
+</body>
+</html>
