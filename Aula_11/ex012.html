@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NationalityTest</title>
+    <style>
+        body {
+            font-family: 'JetBrains Mono NL';
+        }
+    </style>
+</head>
+<body>
+    <h1>Identificador de Nacionalidade</h1>
+    Insira seu país de origem: <input type="text" id="inputPais" placeholder="Ex: Brasil">
+    <input type="button" value="Confirmar" onclick="analise()">
+    <br>Resultado:<div id="resultado"></div>
+    <script>
+        function analise() {
+            var txt1 = window.document.getElementById('inputPais')
+            var pais = txt1.value
+            var resultado = window.document.getElementById('resultado')
+            if (pais == 'Brasil') {
+                resultado.innerHTML = `Sendo originário de ${pais} você é <strong>Brasileiro</strong>`
+            } else if (pais == 'Estados Unidos' || pais == 'Estados Unidos da América' || pais == 'EUA') {
+                resultado.innerHTML = `Sendo originário de ${pais} você é <strong>Estado Unidense</strong>
+                ou, em linguagem informal, <strong>Americano</strong.>`
+            } else if (pais == 'Inglaterra') {
+                resultado.innerHTML = `Sendo originário de ${pais} você é <strong>Inglês</strong>`
+            } else {
+                resultado.innerHTML = `O país inserido não existe ou não foi cadastrado no sistema.`
+            }
+        }
+    </script>
+</body>
+</html>
