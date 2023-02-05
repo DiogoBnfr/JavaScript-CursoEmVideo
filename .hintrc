@@ -6,9 +6,11 @@
     "axe/forms": [
       "default",
       {
-        "label": "off"
+        "label": "off",
+        "select-name": "off"
       }
     ],
-    "compat-api/css": "off"
+    "compat-api/css": "off",
+    "button-type": "off"
   }
 }
