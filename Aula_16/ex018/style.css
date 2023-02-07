@@ -1,0 +1,126 @@
+body {
+    background: linear-gradient(to bottom, #000000, rgb(53, 64, 94));
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #838383;
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background: #232529;
+    width: 340px;
+    height: 610px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.466);
+    color: #e2e2e2
+}
+
+.form {
+    margin: 20px;
+}
+
+.form > input {
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    margin-right: 10px;
+}
+
+.form > button {
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 15px 5px 15px;
+    letter-spacing: 1px;
+}
+
+.form > button:hover {
+    background: #e2e2e2;
+}
+
+.userList {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.userList > select {
+    width: 88%;
+    margin: 0px 20px 0px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.userList > button {
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 15px 5px 15px;
+    letter-spacing: 1px;
+    margin: 20px 20px 0px 20px;
+    width: 90%;
+}
+
+.userList > button:hover {
+    background: #e2e2e2;
+}
+
+hr {
+    width: 90%;
+    margin: 20px 0px 10px 0px;
+}
+
+.formResponse {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.label {
+    height: 100%;
+    width: 60%;
+}
+
+.label > p {
+    margin: 10px 5px 0px 0px;
+}
+
+.result {
+    width: 40%;
+    height: 100%;
+}
+
+.result > p {
+    margin: 10px 5px 0px 0px;
+}
+
+footer {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

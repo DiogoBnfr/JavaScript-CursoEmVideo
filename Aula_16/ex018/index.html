@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Avançada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora Avançada</h1>
+    </header>
+    <section>
+        <div class="form">
+            <input type="number" id="userNumber" placeholder="Insira um número">
+            <button onclick="addNumber()">Adicionar</button>
+        </div>
+        <div class="userList">
+            <select id="selectList" size="15"></select>
+            <button onclick="eraseList()">Apagar lista</button>
+            <button onclick="examineList()">Calcular</button>
+        </div>
+        <hr>
+        <div class="formResponse">
+            <div class="label">
+                <p>Números Cadastrados:</p>
+                <p>Maior Valor Inserido:</p>
+                <p>Menor Valor Inserido:</p>
+                <p>Soma Total dos Valores:</p>
+                <p>Média dos Valores:</p>
+            </div>
+            <div class="result">
+                <p id="numVal"></p>
+                <p id="maxVal"></p>
+                <p id="minVal"></p>
+                <p id="totVal"></p>
+                <p id="medVal"></p>
+            </div>
+        </div>
+        <p class="msg"></p>
+    </section>
+    <footer>
+        &copy;DiogoBnfr
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
